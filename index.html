@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form id="container" action="" method="POST" onsubmit="return false"> <!-- To prevent form from clearing fields after submitting-->
+                <label for="firstname-label" class="label-class">First Name</label>
+                <input type="text" name="firstname-txt" id="firstname-txt" class="input-class">
+
+                <label for="lastname-label" class="label-class">Last Name</label>
+                <input type="text" name="lastname-txt" id="lastname-txt" class="input-class">
+
+                <label for="adress-label" class="label-class">Adress</label>
+                <input type="text" name="adress-txt" id="adress-txt" class="input-class">
+
+                <label for="email-label" class="label-class">Email Adress</label>
+                <input type="text" name="email-txt" id="email-txt" class="input-class">
+
+                <label for="pwd-label" class="label-class">Password</label>
+                <input type="password" name="pwd-txt" id="pwd-txt" class="input-class">
+
+                <label for="comment-label" class="label-class">Comments</label>
+                <textarea name="comment-txt" id="comment-txt" class="input-class"></textarea>
+
+                <button id="btn-submit" class="btn-class" type="submit">Send</button>
+                <button class="btn-class" type="reset">Reset</button>
+            </form>
+        </main>
+        <footer></footer>
+        <script type="text/javascript" src="script.js"></script> <!--Best Practice -->
+    </body>
+</html>
